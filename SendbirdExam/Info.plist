@@ -28,7 +28,7 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>UIStatusBarTintParameters</key>
+	<key>UIStatuSBarTintParameters</key>
 	<dict>
 		<key>UINavigationBar</key>
 		<dict>

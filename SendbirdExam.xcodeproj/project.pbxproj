@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A54C7E62DC8CC22D3FEF253C /* Pods_SendbirdExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174F33C16C8383AEDF7A3182 /* Pods_SendbirdExam.framework */; };
+		D00D3F0D22F5B35600BDB1FD /* SBBaseBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F0C22F5B35600BDB1FD /* SBBaseBookModel.m */; };
+		D00D3F1022F5B4AD00BDB1FD /* SBBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F0F22F5B4AD00BDB1FD /* SBBookModel.m */; };
+		D00D3F1322F5B5BA00BDB1FD /* SBDetailBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1222F5B5BA00BDB1FD /* SBDetailBookModel.m */; };
+		D00D3F1A22F5B72D00BDB1FD /* SBAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1922F5B72D00BDB1FD /* SBAPIManager.m */; };
+		D00D3F1D22F5BB9A00BDB1FD /* SBRequestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1C22F5BB9A00BDB1FD /* SBRequestQuery.m */; };
 		D0FDF71C22EDF1A5004CE813 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */; };
 		D0FDF71F22EDF1A5004CE813 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71E22EDF1A5004CE813 /* FirstViewController.m */; };
 		D0FDF72222EDF1A5004CE813 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF72122EDF1A5004CE813 /* SecondViewController.m */; };
@@ -17,6 +23,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		174F33C16C8383AEDF7A3182 /* Pods_SendbirdExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendbirdExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7268578B03B67B4F79FFCD42 /* Pods-SendbirdExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendbirdExam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendbirdExam/Pods-SendbirdExam.debug.xcconfig"; sourceTree = "<group>"; };
+		B138020BBF3CF6F9FD8BDE95 /* Pods-SendbirdExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendbirdExam.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendbirdExam/Pods-SendbirdExam.release.xcconfig"; sourceTree = "<group>"; };
+		D00D3F0B22F5B35600BDB1FD /* SBBaseBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBaseBookModel.h; sourceTree = "<group>"; };
+		D00D3F0C22F5B35600BDB1FD /* SBBaseBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBaseBookModel.m; sourceTree = "<group>"; };
+		D00D3F0E22F5B4AD00BDB1FD /* SBBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookModel.h; sourceTree = "<group>"; };
+		D00D3F0F22F5B4AD00BDB1FD /* SBBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookModel.m; sourceTree = "<group>"; };
+		D00D3F1122F5B5BA00BDB1FD /* SBDetailBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBDetailBookModel.h; sourceTree = "<group>"; };
+		D00D3F1222F5B5BA00BDB1FD /* SBDetailBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBDetailBookModel.m; sourceTree = "<group>"; };
+		D00D3F1822F5B72D00BDB1FD /* SBAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAPIManager.h; sourceTree = "<group>"; };
+		D00D3F1922F5B72D00BDB1FD /* SBAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAPIManager.m; sourceTree = "<group>"; };
+		D00D3F1B22F5BB9A00BDB1FD /* SBRequestQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBRequestQuery.h; sourceTree = "<group>"; };
+		D00D3F1C22F5BB9A00BDB1FD /* SBRequestQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBRequestQuery.m; sourceTree = "<group>"; };
 		D0FDF71722EDF1A5004CE813 /* SendbirdExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendbirdExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FDF71A22EDF1A5004CE813 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,17 +55,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A54C7E62DC8CC22D3FEF253C /* Pods_SendbirdExam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89E9C3D84B8337C6D3F01A28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				174F33C16C8383AEDF7A3182 /* Pods_SendbirdExam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D00D3F0A22F5B33400BDB1FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D00D3F0B22F5B35600BDB1FD /* SBBaseBookModel.h */,
+				D00D3F0C22F5B35600BDB1FD /* SBBaseBookModel.m */,
+				D00D3F0E22F5B4AD00BDB1FD /* SBBookModel.h */,
+				D00D3F0F22F5B4AD00BDB1FD /* SBBookModel.m */,
+				D00D3F1122F5B5BA00BDB1FD /* SBDetailBookModel.h */,
+				D00D3F1222F5B5BA00BDB1FD /* SBDetailBookModel.m */,
+				D00D3F1B22F5BB9A00BDB1FD /* SBRequestQuery.h */,
+				D00D3F1C22F5BB9A00BDB1FD /* SBRequestQuery.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D00D3F1422F5B70800BDB1FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D00D3F1722F5B71C00BDB1FD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D00D3F1822F5B72D00BDB1FD /* SBAPIManager.h */,
+				D00D3F1922F5B72D00BDB1FD /* SBAPIManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		D0FDF70E22EDF1A5004CE813 = {
 			isa = PBXGroup;
 			children = (
 				D0FDF71922EDF1A5004CE813 /* SendbirdExam */,
 				D0FDF71822EDF1A5004CE813 /* Products */,
+				F6D0500018E183EE64914CB4 /* Pods */,
+				89E9C3D84B8337C6D3F01A28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +122,9 @@
 		D0FDF71922EDF1A5004CE813 /* SendbirdExam */ = {
 			isa = PBXGroup;
 			children = (
+				D00D3F1722F5B71C00BDB1FD /* Network */,
+				D00D3F1422F5B70800BDB1FD /* ViewModel */,
+				D00D3F0A22F5B33400BDB1FD /* Model */,
 				D0FDF71A22EDF1A5004CE813 /* AppDelegate.h */,
 				D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */,
 				D0FDF71D22EDF1A5004CE813 /* FirstViewController.h */,
@@ -76,6 +140,15 @@
 			path = SendbirdExam;
 			sourceTree = "<group>";
 		};
+		F6D0500018E183EE64914CB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7268578B03B67B4F79FFCD42 /* Pods-SendbirdExam.debug.xcconfig */,
+				B138020BBF3CF6F9FD8BDE95 /* Pods-SendbirdExam.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0FDF73022EDF1A6004CE813 /* Build configuration list for PBXNativeTarget "SendbirdExam" */;
 			buildPhases = (
+				9D0F65D971A5034DF8BFE8B7 /* [CP] Check Pods Manifest.lock */,
 				D0FDF71322EDF1A5004CE813 /* Sources */,
 				D0FDF71422EDF1A5004CE813 /* Frameworks */,
 				D0FDF71522EDF1A5004CE813 /* Resources */,
+				06F240532C2F9BC0847A23B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +216,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06F240532C2F9BC0847A23B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SendbirdExam/Pods-SendbirdExam-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendbirdExam/Pods-SendbirdExam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D0F65D971A5034DF8BFE8B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SendbirdExam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0FDF71322EDF1A5004CE813 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,7 +270,12 @@
 			files = (
 				D0FDF72222EDF1A5004CE813 /* SecondViewController.m in Sources */,
 				D0FDF71C22EDF1A5004CE813 /* AppDelegate.m in Sources */,
+				D00D3F1322F5B5BA00BDB1FD /* SBDetailBookModel.m in Sources */,
+				D00D3F1A22F5B72D00BDB1FD /* SBAPIManager.m in Sources */,
+				D00D3F0D22F5B35600BDB1FD /* SBBaseBookModel.m in Sources */,
+				D00D3F1022F5B4AD00BDB1FD /* SBBookModel.m in Sources */,
 				D0FDF72D22EDF1A6004CE813 /* main.m in Sources */,
+				D00D3F1D22F5BB9A00BDB1FD /* SBRequestQuery.m in Sources */,
 				D0FDF71F22EDF1A5004CE813 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +416,7 @@
 		};
 		D0FDF73122EDF1A6004CE813 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7268578B03B67B4F79FFCD42 /* Pods-SendbirdExam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +434,7 @@
 		};
 		D0FDF73222EDF1A6004CE813 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B138020BBF3CF6F9FD8BDE95 /* Pods-SendbirdExam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

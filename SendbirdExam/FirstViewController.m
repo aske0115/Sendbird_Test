@@ -7,18 +7,27 @@
 //
 
 #import "FirstViewController.h"
+#import "SBAPIManager.h"
+#import "SBRequestQuery.h"
 
 @interface FirstViewController ()
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
-@end
+@end 
 
 @implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.tableView registerNib:[UINib nibWithNibName:@"asdfasd" bundle:nil] forCellReuseIdentifier:@"Reuse"];
-    
     // Do any additional setup after loading the view.
+    [self requestAPI];
+}
+
+- (void)requestAPI {
+    SBRequestQuery *query = [[SBRequestQuery alloc] initWithQuery:@"mongoDB"];
+    ;
+    [[SBAPIManager shared] requestWithQuery:[query query:requestNew] completion:^(SBBaseBookModel * _Nonnull model) {
+        NSLog(model);
+    }];
 }
 
 
