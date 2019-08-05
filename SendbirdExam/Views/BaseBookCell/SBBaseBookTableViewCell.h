@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) IBOutlet UILabel *subtitleLabel;
 @property (nonatomic, weak) IBOutlet UILabel *priceLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *thumbnailImageView;
-//- (void)configureCell:(SBBookModel *)model;
+
 @end
 
 NS_ASSUME_NONNULL_END

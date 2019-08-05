@@ -15,6 +15,7 @@
 		D00D3F1D22F5BB9A00BDB1FD /* SBRequestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1C22F5BB9A00BDB1FD /* SBRequestQuery.m */; };
 		D0226EB022F85BAE00882552 /* SBBaseBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0226EAF22F85BAE00882552 /* SBBaseBookTableViewCell.m */; };
 		D0B2D5EE22F880520036DCBD /* SBNewBookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2D5ED22F880520036DCBD /* SBNewBookViewModel.m */; };
+		D0B2D5F222F886FA0036DCBD /* SBResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2D5F122F886FA0036DCBD /* SBResult.m */; };
 		D0FDF71C22EDF1A5004CE813 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */; };
 		D0FDF71F22EDF1A5004CE813 /* NewBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71E22EDF1A5004CE813 /* NewBookViewController.m */; };
 		D0FDF72222EDF1A5004CE813 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF72122EDF1A5004CE813 /* SecondViewController.m */; };
@@ -42,6 +43,8 @@
 		D0226EAF22F85BAE00882552 /* SBBaseBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBaseBookTableViewCell.m; sourceTree = "<group>"; };
 		D0B2D5EC22F880520036DCBD /* SBNewBookViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBNewBookViewModel.h; sourceTree = "<group>"; };
 		D0B2D5ED22F880520036DCBD /* SBNewBookViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBNewBookViewModel.m; sourceTree = "<group>"; };
+		D0B2D5F022F886FA0036DCBD /* SBResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBResult.h; sourceTree = "<group>"; };
+		D0B2D5F122F886FA0036DCBD /* SBResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBResult.m; sourceTree = "<group>"; };
 		D0FDF71722EDF1A5004CE813 /* SendbirdExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendbirdExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FDF71A22EDF1A5004CE813 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 			children = (
 				D00D3F1822F5B72D00BDB1FD /* SBAPIManager.h */,
 				D00D3F1922F5B72D00BDB1FD /* SBAPIManager.m */,
+				D0B2D5F022F886FA0036DCBD /* SBResult.h */,
+				D0B2D5F122F886FA0036DCBD /* SBResult.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				D00D3F1322F5B5BA00BDB1FD /* SBDetailBookModel.m in Sources */,
 				D0B2D5EE22F880520036DCBD /* SBNewBookViewModel.m in Sources */,
 				D00D3F1A22F5B72D00BDB1FD /* SBAPIManager.m in Sources */,
+				D0B2D5F222F886FA0036DCBD /* SBResult.m in Sources */,
 				D00D3F0D22F5B35600BDB1FD /* SBBaseBookModel.m in Sources */,
 				D00D3F1022F5B4AD00BDB1FD /* SBBookModel.m in Sources */,
 				D0226EB022F85BAE00882552 /* SBBaseBookTableViewCell.m in Sources */,

@@ -12,13 +12,14 @@
 #import "SBRequestQuery.h"
 #import "SBBaseBookModel.h"
 #import "SBDetailBookModel.h"
-
+#import "SBResult.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SBAPIManager : NSObject
 +(SBAPIManager *)shared;
 
+- (void)requestNewBooks:(void(^)(SBResult<SBBaseBookModel *> *))completion;
 - (void)requestWithQuery:(NSString *)query completion:(void(^)(SBBaseBookModel* model))completion;
 - (void)requestBookWithBookid:(NSString *)bookId completion:(void(^)(SBDetailBookModel *))completion;
 - (void)requestNewBook:(void(^)(SBBaseBookModel *))completion;

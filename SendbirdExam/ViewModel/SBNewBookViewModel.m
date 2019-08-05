@@ -9,19 +9,24 @@
 #import "SBNewBookViewModel.h"
 #import "SBBookModel.h"
 #import "SBAPIManager.h"
-
+#import "SBResult.h"
 @interface SBNewBookViewModel ()
 @property (nonatomic, strong) NSArray<SBBookModel *> *model;
 @end
 @implementation SBNewBookViewModel
 
 - (void)requestNewBookWithCompletion:(void (^)(void))completion {
-    [[SBAPIManager shared] requestNewBook:^(SBBaseBookModel * _Nonnull model) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            __weak typeof(self) weakSelf = self;
-            weakSelf.model = model.books;
+    [[SBAPIManager shared] requestNewBooks:^(SBResult<SBBaseBookModel *> * _Nonnull result) {
+        if (result.value != nil) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                __weak typeof(self) weakSelf = self;
+                weakSelf.model = result.value.books;
+                completion();
+            });
+        } else {
+            NSLog(@"Erorr == %@",result.error.description);
             completion();
-        });
+        }
     }];
 }
 

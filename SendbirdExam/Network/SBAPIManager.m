@@ -60,13 +60,24 @@ static NSString *urlString = @"https://api.itbook.store/1.0/";
         if (responseObject != nil) {
             completion([[SBDetailBookModel alloc] initWithJSON:responseObject]);
         }
-        //        NSLog(responseObject);
-        //            completion(
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        //        NSLog(error.description);
     }];
 }
-
+- (void)requestNewBooks:(void(^)(SBResult<SBBaseBookModel *> *))completion
+{
+    [[AFHTTPSessionManager manager] GET:[urlString stringByAppendingString:@"/new"] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (responseObject != nil) {
+            SBResult<SBBaseBookModel *> *model = [[SBResult alloc] init];
+            model.value = [[SBBaseBookModel alloc] initWithJSON:responseObject];
+//
+            completion(model);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        SBResult<SBBaseBookModel *> *model = [[SBResult alloc] init];
+        model.error = error;
+        completion(model);
+    }];
+}
 - (void)requestNewBook:(void(^)(SBBaseBookModel *))completion {
     
     [[AFHTTPSessionManager manager] GET:[urlString stringByAppendingString:@"/new"] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

@@ -8,14 +8,6 @@
 
 #import "SBBaseBookTableViewCell.h"
 
-
-@interface SBBaseBookTableViewCell ()
-
-
-
-@end
-
-
 @implementation SBBaseBookTableViewCell
 
 - (void)awakeFromNib {
@@ -29,11 +21,5 @@
     // Configure the view for the selected state
 }
 
-//- (void)configureCell:(SBBookModel *)model {
-//    self.titleLabel.text = model.title;
-//    self.subtitleLabel.text = model.subtitle;
-//    self.priceLabel.text = model.price;
-//    [self.thumbnailImageView setImageWithURL:model.thumbnailImageURL];
-//}
 
 @end
