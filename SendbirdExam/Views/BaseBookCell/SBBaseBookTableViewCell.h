@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SBBookModel.h"
 #import <AFNetworking/AFNetworking.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SBBaseBookTableViewCell : UITableViewCell
-
-
-- (void)configureCell:(SBBookModel *)model;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *subtitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *priceLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *thumbnailImageView;
+//- (void)configureCell:(SBBookModel *)model;
 @end
 
 NS_ASSUME_NONNULL_END

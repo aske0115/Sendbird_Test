@@ -10,7 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SBBookModel : NSObject
+@protocol SBBookModelDelegate
+@required
+- (id)initWithJSON:(NSDictionary *)dictionary;
+@end
+
+@interface SBBookModel : NSObject <SBBookModelDelegate>
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *subtitle;
@@ -19,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSURL *thumbnailImageURL;
 @property (nonatomic, strong) NSURL *bookURL;
 
-- (id)initWithBookModel:(NSDictionary *)model;
+- (id)initWithJSON:(NSDictionary *)dictionary;
 @end
 
 NS_ASSUME_NONNULL_END

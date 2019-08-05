@@ -11,6 +11,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+
 @interface SBBaseBookModel : NSObject
 @property (nonatomic, assign, readonly, getter = totalCount) NSInteger total;
 @property (nonatomic, assign, readonly, getter = error) NSInteger errorCode;

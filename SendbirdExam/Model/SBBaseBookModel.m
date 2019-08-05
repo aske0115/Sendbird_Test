@@ -14,14 +14,13 @@
     if (self) {
         NSArray *book = dictionary[@"books"];
         NSMutableArray *booksArray = [[NSMutableArray alloc] init];
-        @autoreleasepool {
+       
             for(NSDictionary *dic in book){
-                [booksArray addObject:[[SBBookModel alloc] initWithBookModel:dic] ];
+                 @autoreleasepool {
+                     [booksArray addObject:[[SBBookModel alloc] initWithJSON:dic] ];
+                }
             }
-        }
         self.books = booksArray;
-        
-//        self.books = dictionary[@"books"];
     }
     
     return self;

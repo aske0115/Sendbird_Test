@@ -7,14 +7,11 @@
 //
 
 #import "SBBaseBookTableViewCell.h"
-#import "UIImageView+AFNetworking.h"
+
 
 @interface SBBaseBookTableViewCell ()
 
-@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
-@property (nonatomic, weak) IBOutlet UILabel *subtitleLabel;
-@property (nonatomic, weak) IBOutlet UILabel *priceLabel;
-@property (nonatomic, weak) IBOutlet UIImageView *thumbnailImageView;
+
 
 @end
 
@@ -32,11 +29,11 @@
     // Configure the view for the selected state
 }
 
-- (void)configureCell:(SBBookModel *)model {
-    self.titleLabel.text = model.title;
-    self.subtitleLabel.text = model.subtitle;
-    self.priceLabel.text = model.price;
-    [self.thumbnailImageView setImageWithURL:model.thumbnailImageURL];
-}
+//- (void)configureCell:(SBBookModel *)model {
+//    self.titleLabel.text = model.title;
+//    self.subtitleLabel.text = model.subtitle;
+//    self.priceLabel.text = model.price;
+//    [self.thumbnailImageView setImageWithURL:model.thumbnailImageURL];
+//}
 
 @end

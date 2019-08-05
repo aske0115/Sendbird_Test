@@ -56,7 +56,15 @@ static NSString *urlString = @"https://api.itbook.store/1.0/";
 }
 
 - (void)requestBookWithBookid:(NSString *)bookId completion:(void(^)(SBDetailBookModel *))completion {
-    
+    [[AFHTTPSessionManager manager] GET:[urlString stringByAppendingString:[@"/books/" stringByAppendingString:bookId]] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (responseObject != nil) {
+            completion([[SBDetailBookModel alloc] initWithJSON:responseObject]);
+        }
+        //        NSLog(responseObject);
+        //            completion(
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //        NSLog(error.description);
+    }];
 }
 
 - (void)requestNewBook:(void(^)(SBBaseBookModel *))completion {

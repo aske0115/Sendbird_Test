@@ -9,15 +9,15 @@
 #import "SBBookModel.h"
 
 @implementation SBBookModel
-- (id)initWithBookModel:(NSDictionary *)model {
+- (id)initWithJSON:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        self.bookId = model[@"isbn13"];
-        self.bookURL = [NSURL URLWithString:model[@"url"]];
-        self.title = model[@"title"];
-        self.subtitle = model[@"subtitle"];
-        self.price = model[@"price"];
-        self.thumbnailImageURL = [NSURL URLWithString:model[@"image"]];
+        self.bookId = dictionary[@"isbn13"];
+        self.bookURL = [NSURL URLWithString:dictionary[@"url"]];
+        self.title = dictionary[@"title"];
+        self.subtitle = dictionary[@"subtitle"];
+        self.price = dictionary[@"price"];
+        self.thumbnailImageURL = [NSURL URLWithString:dictionary[@"image"]];
     }
     return self;
 }
