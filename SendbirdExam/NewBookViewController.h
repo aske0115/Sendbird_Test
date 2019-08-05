@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  NewBookViewController.h
 //  SendbirdExam
 //
 //  Created by GeunHwa Lee on 29/07/2019.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface NewBookViewController : UIViewController
 
 @end
 

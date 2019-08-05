@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSURL *thumbnailImageURL;
 @property (nonatomic, strong) NSURL *bookURL;
 
-- (void)setBookModelWithData:(NSDictionary *)data;
+- (id)initWithBookModel:(NSDictionary *)model;
 @end
 
 NS_ASSUME_NONNULL_END

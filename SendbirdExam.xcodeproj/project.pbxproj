@@ -13,8 +13,9 @@
 		D00D3F1322F5B5BA00BDB1FD /* SBDetailBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1222F5B5BA00BDB1FD /* SBDetailBookModel.m */; };
 		D00D3F1A22F5B72D00BDB1FD /* SBAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1922F5B72D00BDB1FD /* SBAPIManager.m */; };
 		D00D3F1D22F5BB9A00BDB1FD /* SBRequestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1C22F5BB9A00BDB1FD /* SBRequestQuery.m */; };
+		D0226EB022F85BAE00882552 /* SBBaseBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0226EAF22F85BAE00882552 /* SBBaseBookTableViewCell.m */; };
 		D0FDF71C22EDF1A5004CE813 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */; };
-		D0FDF71F22EDF1A5004CE813 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71E22EDF1A5004CE813 /* FirstViewController.m */; };
+		D0FDF71F22EDF1A5004CE813 /* NewBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71E22EDF1A5004CE813 /* NewBookViewController.m */; };
 		D0FDF72222EDF1A5004CE813 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF72122EDF1A5004CE813 /* SecondViewController.m */; };
 		D0FDF72522EDF1A5004CE813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FDF72322EDF1A5004CE813 /* Main.storyboard */; };
 		D0FDF72722EDF1A6004CE813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FDF72622EDF1A6004CE813 /* Assets.xcassets */; };
@@ -36,11 +37,13 @@
 		D00D3F1922F5B72D00BDB1FD /* SBAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAPIManager.m; sourceTree = "<group>"; };
 		D00D3F1B22F5BB9A00BDB1FD /* SBRequestQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBRequestQuery.h; sourceTree = "<group>"; };
 		D00D3F1C22F5BB9A00BDB1FD /* SBRequestQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBRequestQuery.m; sourceTree = "<group>"; };
+		D0226EAE22F85BAE00882552 /* SBBaseBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBaseBookTableViewCell.h; sourceTree = "<group>"; };
+		D0226EAF22F85BAE00882552 /* SBBaseBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBaseBookTableViewCell.m; sourceTree = "<group>"; };
 		D0FDF71722EDF1A5004CE813 /* SendbirdExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendbirdExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FDF71A22EDF1A5004CE813 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D0FDF71D22EDF1A5004CE813 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		D0FDF71E22EDF1A5004CE813 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		D0FDF71D22EDF1A5004CE813 /* NewBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewBookViewController.h; sourceTree = "<group>"; };
+		D0FDF71E22EDF1A5004CE813 /* NewBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewBookViewController.m; sourceTree = "<group>"; };
 		D0FDF72022EDF1A5004CE813 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		D0FDF72122EDF1A5004CE813 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		D0FDF72422EDF1A5004CE813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +104,23 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		D0226EAC22F85B8600882552 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0226EAD22F85B8C00882552 /* BaseBookCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0226EAD22F85B8C00882552 /* BaseBookCell */ = {
+			isa = PBXGroup;
+			children = (
+				D0226EAE22F85BAE00882552 /* SBBaseBookTableViewCell.h */,
+				D0226EAF22F85BAE00882552 /* SBBaseBookTableViewCell.m */,
+			);
+			path = BaseBookCell;
+			sourceTree = "<group>";
+		};
 		D0FDF70E22EDF1A5004CE813 = {
 			isa = PBXGroup;
 			children = (
@@ -122,13 +142,14 @@
 		D0FDF71922EDF1A5004CE813 /* SendbirdExam */ = {
 			isa = PBXGroup;
 			children = (
+				D0226EAC22F85B8600882552 /* Views */,
 				D00D3F1722F5B71C00BDB1FD /* Network */,
 				D00D3F1422F5B70800BDB1FD /* ViewModel */,
 				D00D3F0A22F5B33400BDB1FD /* Model */,
 				D0FDF71A22EDF1A5004CE813 /* AppDelegate.h */,
 				D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */,
-				D0FDF71D22EDF1A5004CE813 /* FirstViewController.h */,
-				D0FDF71E22EDF1A5004CE813 /* FirstViewController.m */,
+				D0FDF71D22EDF1A5004CE813 /* NewBookViewController.h */,
+				D0FDF71E22EDF1A5004CE813 /* NewBookViewController.m */,
 				D0FDF72022EDF1A5004CE813 /* SecondViewController.h */,
 				D0FDF72122EDF1A5004CE813 /* SecondViewController.m */,
 				D0FDF72322EDF1A5004CE813 /* Main.storyboard */,
@@ -274,9 +295,10 @@
 				D00D3F1A22F5B72D00BDB1FD /* SBAPIManager.m in Sources */,
 				D00D3F0D22F5B35600BDB1FD /* SBBaseBookModel.m in Sources */,
 				D00D3F1022F5B4AD00BDB1FD /* SBBookModel.m in Sources */,
+				D0226EB022F85BAE00882552 /* SBBaseBookTableViewCell.m in Sources */,
 				D0FDF72D22EDF1A6004CE813 /* main.m in Sources */,
 				D00D3F1D22F5BB9A00BDB1FD /* SBRequestQuery.m in Sources */,
-				D0FDF71F22EDF1A5004CE813 /* FirstViewController.m in Sources */,
+				D0FDF71F22EDF1A5004CE813 /* NewBookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

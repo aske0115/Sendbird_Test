@@ -13,12 +13,18 @@
     self = [super init];
     if (self) {
         NSArray *book = dictionary[@"books"];
-        for(NSDictionary *dic in book){
-            
+        NSMutableArray *booksArray = [[NSMutableArray alloc] init];
+        @autoreleasepool {
+            for(NSDictionary *dic in book){
+                [booksArray addObject:[[SBBookModel alloc] initWithBookModel:dic] ];
+            }
         }
-        self.books = dictionary[@"books"];
+        self.books = booksArray;
+        
+//        self.books = dictionary[@"books"];
     }
     
     return self;
 }
+
 @end

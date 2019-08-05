@@ -21,6 +21,7 @@ static NSString *urlString = @"https://api.itbook.store/1.0/";
     return instance;
 }
 
+
 - (void)requestWithQuery:(NSString *)query completion:(void(^)(SBBaseBookModel* model))completion {
 //    completion([SBBaseBookModel init]);
     
@@ -52,5 +53,26 @@ static NSString *urlString = @"https://api.itbook.store/1.0/";
 //    }] resume];
 //    request.
 //    request.
+}
+
+- (void)requestBookWithBookid:(NSString *)bookId completion:(void(^)(SBDetailBookModel *))completion {
+    
+}
+
+- (void)requestNewBook:(void(^)(SBBaseBookModel *))completion {
+    
+    [[AFHTTPSessionManager manager] GET:[urlString stringByAppendingString:@"/new"] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (responseObject != nil) {
+            completion([[SBBaseBookModel alloc] initWithJSON:responseObject]);
+        }
+//        NSLog(responseObject);
+        //            completion(
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        NSLog(error.description);
+    }];
+}
+
+- (void)requestSearchQuery:(NSString *)query page:(NSInteger)page completion:(void(^)(SBBaseBookModel *))completion {
+    
 }
 @end
