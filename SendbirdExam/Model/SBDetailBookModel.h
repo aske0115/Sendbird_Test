@@ -25,10 +25,16 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SBDetailBookModel : SBBookModel
-
-@property (nonatomic, assign, readonly) NSInteger errorCode;
-
-
+@property (nonatomic, assign) NSInteger errorCode;
+@property (nonatomic, readonly) NSString *authors;
+@property (nonatomic, readonly) NSString *publisher;
+@property (nonatomic, readonly) NSString *isbn10;
+@property (nonatomic, readonly) NSString *pages;
+@property (nonatomic, readonly) NSString *year;
+@property (nonatomic, readonly) NSString *rating;
+@property (nonatomic, readonly) NSString *desc;
+@property (nonatomic, readonly) NSString *language;
+@property (nonatomic, readonly) NSDictionary *pdf;
 @end
 
 NS_ASSUME_NONNULL_END

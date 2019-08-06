@@ -18,11 +18,11 @@
 - (void)requestNewBookWithCompletion:(void (^)(void))completion {
     [[SBAPIManager shared] requestNewBooks:^(SBResult<SBBaseBookModel *> * _Nonnull result) {
         if (result.value != nil) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                __weak typeof(self) weakSelf = self;
-                weakSelf.model = result.value.books;
-                completion();
-            });
+            __weak typeof(self) weakSelf = self;
+//            dispatch_async(dispatch_get_main_queue(), ^{
+            weakSelf.model = result.value.books;
+            completion();
+//            });
         } else {
             NSLog(@"Erorr == %@",result.error.description);
             completion();
@@ -32,6 +32,10 @@
 
 - (NSInteger)modelCount {
     return self.model.count;
+}
+
+- (NSString *)isbn13:(NSIndexPath *)path {
+    return self.model[path.row].isbn13;
 }
 
 - (NSString *)title:(NSIndexPath *)path {

@@ -9,18 +9,18 @@
 #import "SBBaseBookModel.h"
 
 @implementation SBBaseBookModel
+
 - (id)initWithJSON:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
         NSArray *book = dictionary[@"books"];
         NSMutableArray *booksArray = [[NSMutableArray alloc] init];
        
-            for(NSDictionary *dic in book){
-                 @autoreleasepool {
-                     [booksArray addObject:[[SBBookModel alloc] initWithJSON:dic] ];
-                }
-            }
-        self.books = booksArray;
+        for(NSDictionary *dic in book){
+            [booksArray addObject:[[SBBookModel alloc] initWithJSON:dic] ];
+        }
+        
+        _books = booksArray;
     }
     
     return self;

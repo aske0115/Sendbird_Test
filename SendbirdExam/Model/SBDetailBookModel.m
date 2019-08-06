@@ -29,26 +29,24 @@
  }
  **/
 #import "SBDetailBookModel.h"
+
 @interface SBDetailBookModel ()
-@property (nonatomic, strong) NSString *authors;
-@property (nonatomic, strong) NSString *publisher;
-@property (nonatomic, strong) NSString *isbn10;
-@property (nonatomic, strong) NSString *pages;
-@property (nonatomic, strong) NSString *year;
-@property (nonatomic, strong) NSString *raing;
-@property (nonatomic, strong) NSString *desc;
-@property (nonatomic, strong) NSDictionary *pdf;
+
 @end
+
 @implementation SBDetailBookModel
 - (id)initWithJSON:(NSDictionary *)dictionary {
     self = [super initWithJSON:dictionary];
     if (self) {
-        self.authors = dictionary[@"authors"];
-        self.publisher = dictionary[@"publisher"];
-        self.pages = dictionary[@"pages"];
-        self.year = dictionary[@"year"];
-        self.desc = dictionary[@"desc"];
-        self.pdf = dictionary[@"pdf"];
+        _authors = dictionary[@"authors"];
+        _publisher = dictionary[@"publisher"];
+        _language = dictionary[@"language"];
+        _isbn10 = dictionary[@"isbn10"];
+        _pages = dictionary[@"pages"];
+        _rating = dictionary[@"rating"];
+        _year = dictionary[@"year"];
+        _desc = dictionary[@"desc"];
+        _pdf = dictionary[@"pdf"];
     }
     return self;
 }

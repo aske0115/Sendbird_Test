@@ -12,7 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SBNewBookViewModel : NSObject
 - (void)requestNewBookWithCompletion:(void(^)(void))completion;
+
 - (NSInteger)modelCount;
+
+- (NSString *)isbn13:(NSIndexPath *)path;
 - (NSString *)title:(NSIndexPath *)path;
 - (NSString *)subTitle:(NSIndexPath *)path;
 - (NSString *)price:(NSIndexPath *)path;

@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *subtitle;
-@property (nonatomic, strong) NSString *bookId;
+@property (nonatomic, strong) NSString *isbn13;
 @property (nonatomic, strong) NSString *price;
 @property (nonatomic, strong) NSURL *thumbnailImageURL;
 @property (nonatomic, strong) NSURL *bookURL;

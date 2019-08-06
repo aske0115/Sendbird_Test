@@ -14,6 +14,11 @@
 		D00D3F1A22F5B72D00BDB1FD /* SBAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1922F5B72D00BDB1FD /* SBAPIManager.m */; };
 		D00D3F1D22F5BB9A00BDB1FD /* SBRequestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1C22F5BB9A00BDB1FD /* SBRequestQuery.m */; };
 		D0226EB022F85BAE00882552 /* SBBaseBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0226EAF22F85BAE00882552 /* SBBaseBookTableViewCell.m */; };
+		D087DB2722F99B01004E3617 /* SBBookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D087DB2622F99B01004E3617 /* SBBookDetailViewController.m */; };
+		D087DB2922F99B11004E3617 /* SBBookDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D087DB2822F99B11004E3617 /* SBBookDetailViewController.storyboard */; };
+		D087DB2D22F99B5E004E3617 /* SBDetailBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D087DB2C22F99B5E004E3617 /* SBDetailBookTableViewCell.m */; };
+		D087DB3022F9A660004E3617 /* SBDetailBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D087DB2F22F9A660004E3617 /* SBDetailBookCell.m */; };
+		D087DB3322F9A9F0004E3617 /* SBBookDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D087DB3222F9A9F0004E3617 /* SBBookDetailViewModel.m */; };
 		D0B2D5EE22F880520036DCBD /* SBNewBookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2D5ED22F880520036DCBD /* SBNewBookViewModel.m */; };
 		D0B2D5F222F886FA0036DCBD /* SBResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2D5F122F886FA0036DCBD /* SBResult.m */; };
 		D0FDF71C22EDF1A5004CE813 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */; };
@@ -41,6 +46,15 @@
 		D00D3F1C22F5BB9A00BDB1FD /* SBRequestQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBRequestQuery.m; sourceTree = "<group>"; };
 		D0226EAE22F85BAE00882552 /* SBBaseBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBaseBookTableViewCell.h; sourceTree = "<group>"; };
 		D0226EAF22F85BAE00882552 /* SBBaseBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBaseBookTableViewCell.m; sourceTree = "<group>"; };
+		D087DB2522F99B01004E3617 /* SBBookDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookDetailViewController.h; sourceTree = "<group>"; };
+		D087DB2622F99B01004E3617 /* SBBookDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookDetailViewController.m; sourceTree = "<group>"; };
+		D087DB2822F99B11004E3617 /* SBBookDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SBBookDetailViewController.storyboard; sourceTree = "<group>"; };
+		D087DB2B22F99B5E004E3617 /* SBDetailBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBDetailBookTableViewCell.h; sourceTree = "<group>"; };
+		D087DB2C22F99B5E004E3617 /* SBDetailBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBDetailBookTableViewCell.m; sourceTree = "<group>"; };
+		D087DB2E22F9A660004E3617 /* SBDetailBookCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBDetailBookCell.h; sourceTree = "<group>"; };
+		D087DB2F22F9A660004E3617 /* SBDetailBookCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBDetailBookCell.m; sourceTree = "<group>"; };
+		D087DB3122F9A9F0004E3617 /* SBBookDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookDetailViewModel.h; sourceTree = "<group>"; };
+		D087DB3222F9A9F0004E3617 /* SBBookDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookDetailViewModel.m; sourceTree = "<group>"; };
 		D0B2D5EC22F880520036DCBD /* SBNewBookViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBNewBookViewModel.h; sourceTree = "<group>"; };
 		D0B2D5ED22F880520036DCBD /* SBNewBookViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBNewBookViewModel.m; sourceTree = "<group>"; };
 		D0B2D5F022F886FA0036DCBD /* SBResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBResult.h; sourceTree = "<group>"; };
@@ -99,6 +113,8 @@
 			children = (
 				D0B2D5EC22F880520036DCBD /* SBNewBookViewModel.h */,
 				D0B2D5ED22F880520036DCBD /* SBNewBookViewModel.m */,
+				D087DB3122F9A9F0004E3617 /* SBBookDetailViewModel.h */,
+				D087DB3222F9A9F0004E3617 /* SBBookDetailViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -117,6 +133,9 @@
 		D0226EAC22F85B8600882552 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D087DB2A22F99B46004E3617 /* BookDetailCell */,
+				D087DB2422F99ACE004E3617 /* BookDetailViewController */,
+				D087DB2322F99688004E3617 /* NewBookViewController */,
 				D0226EAD22F85B8C00882552 /* BaseBookCell */,
 			);
 			path = Views;
@@ -129,6 +148,36 @@
 				D0226EAF22F85BAE00882552 /* SBBaseBookTableViewCell.m */,
 			);
 			path = BaseBookCell;
+			sourceTree = "<group>";
+		};
+		D087DB2322F99688004E3617 /* NewBookViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0FDF71D22EDF1A5004CE813 /* NewBookViewController.h */,
+				D0FDF71E22EDF1A5004CE813 /* NewBookViewController.m */,
+			);
+			path = NewBookViewController;
+			sourceTree = "<group>";
+		};
+		D087DB2422F99ACE004E3617 /* BookDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D087DB2522F99B01004E3617 /* SBBookDetailViewController.h */,
+				D087DB2622F99B01004E3617 /* SBBookDetailViewController.m */,
+				D087DB2822F99B11004E3617 /* SBBookDetailViewController.storyboard */,
+			);
+			path = BookDetailViewController;
+			sourceTree = "<group>";
+		};
+		D087DB2A22F99B46004E3617 /* BookDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				D087DB2E22F9A660004E3617 /* SBDetailBookCell.h */,
+				D087DB2F22F9A660004E3617 /* SBDetailBookCell.m */,
+				D087DB2B22F99B5E004E3617 /* SBDetailBookTableViewCell.h */,
+				D087DB2C22F99B5E004E3617 /* SBDetailBookTableViewCell.m */,
+			);
+			path = BookDetailCell;
 			sourceTree = "<group>";
 		};
 		D0FDF70E22EDF1A5004CE813 = {
@@ -158,8 +207,6 @@
 				D00D3F0A22F5B33400BDB1FD /* Model */,
 				D0FDF71A22EDF1A5004CE813 /* AppDelegate.h */,
 				D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */,
-				D0FDF71D22EDF1A5004CE813 /* NewBookViewController.h */,
-				D0FDF71E22EDF1A5004CE813 /* NewBookViewController.m */,
 				D0FDF72022EDF1A5004CE813 /* SecondViewController.h */,
 				D0FDF72122EDF1A5004CE813 /* SecondViewController.m */,
 				D0FDF72322EDF1A5004CE813 /* Main.storyboard */,
@@ -241,6 +288,7 @@
 			files = (
 				D0FDF72A22EDF1A6004CE813 /* LaunchScreen.storyboard in Resources */,
 				D0FDF72722EDF1A6004CE813 /* Assets.xcassets in Resources */,
+				D087DB2922F99B11004E3617 /* SBBookDetailViewController.storyboard in Resources */,
 				D0FDF72522EDF1A5004CE813 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D087DB2D22F99B5E004E3617 /* SBDetailBookTableViewCell.m in Sources */,
+				D087DB3322F9A9F0004E3617 /* SBBookDetailViewModel.m in Sources */,
 				D0FDF72222EDF1A5004CE813 /* SecondViewController.m in Sources */,
+				D087DB2722F99B01004E3617 /* SBBookDetailViewController.m in Sources */,
 				D0FDF71C22EDF1A5004CE813 /* AppDelegate.m in Sources */,
 				D00D3F1322F5B5BA00BDB1FD /* SBDetailBookModel.m in Sources */,
 				D0B2D5EE22F880520036DCBD /* SBNewBookViewModel.m in Sources */,
@@ -311,6 +362,7 @@
 				D0FDF72D22EDF1A6004CE813 /* main.m in Sources */,
 				D00D3F1D22F5BB9A00BDB1FD /* SBRequestQuery.m in Sources */,
 				D0FDF71F22EDF1A5004CE813 /* NewBookViewController.m in Sources */,
+				D087DB3022F9A660004E3617 /* SBDetailBookCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

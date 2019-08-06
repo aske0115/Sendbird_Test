@@ -19,11 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SBAPIManager : NSObject
 +(SBAPIManager *)shared;
 
+- (void)requestBookWithBookid:(NSString *)bookId completion:(void(^)(SBResult<SBDetailBookModel *> *))completion;
+
 - (void)requestNewBooks:(void(^)(SBResult<SBBaseBookModel *> *))completion;
-- (void)requestWithQuery:(NSString *)query completion:(void(^)(SBBaseBookModel* model))completion;
-- (void)requestBookWithBookid:(NSString *)bookId completion:(void(^)(SBDetailBookModel *))completion;
-- (void)requestNewBook:(void(^)(SBBaseBookModel *))completion;
-- (void)requestSearchQuery:(NSString *)query page:(NSInteger)page completion:(void(^)(SBBaseBookModel *))completion;
+
+- (void)requestSearchQuery:(NSString *)query page:(NSInteger)page completion:(void(^)(SBResult<SBBaseBookModel *> *))completion;
 @end
 
 NS_ASSUME_NONNULL_END

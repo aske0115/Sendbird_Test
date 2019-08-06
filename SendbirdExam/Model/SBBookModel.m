@@ -12,12 +12,12 @@
 - (id)initWithJSON:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        self.bookId = dictionary[@"isbn13"];
-        self.bookURL = [NSURL URLWithString:dictionary[@"url"]];
-        self.title = dictionary[@"title"];
-        self.subtitle = dictionary[@"subtitle"];
-        self.price = dictionary[@"price"];
-        self.thumbnailImageURL = [NSURL URLWithString:dictionary[@"image"]];
+        _isbn13 = dictionary[@"isbn13"];
+        _bookURL = [NSURL URLWithString:dictionary[@"url"]];
+        _title = dictionary[@"title"];
+        _subtitle = dictionary[@"subtitle"];
+        _price = dictionary[@"price"];
+        _thumbnailImageURL = [NSURL URLWithString:dictionary[@"image"]];
     }
     return self;
 }

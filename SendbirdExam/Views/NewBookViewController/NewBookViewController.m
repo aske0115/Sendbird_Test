@@ -12,29 +12,29 @@
 #import "SBRequestQuery.h"
 #import "SBBaseBookTableViewCell.h"
 #import "UIImageView+AFNetworking.h"
-
+#import "SBBookDetailViewController.h"
 
 @interface NewBookViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) SBNewBookViewModel *viewModel;
-//@property (nonatomic, strong) NSArray<SBBookModel *> *model;
 @end
 
 @implementation NewBookViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
-    self.viewModel = [[SBNewBookViewModel alloc] init];
-    [self registerTableViewCell];
+
+    [self setUp];
     [self requestAPI];
 }
 
-//- (void)
-
-- (void)registerTableViewCell {
-
+- (void)setUp {
+    
+    self.viewModel = [[SBNewBookViewModel alloc] init];
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
+
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 }
@@ -61,7 +61,22 @@
     cell.subtitleLabel.text = [self.viewModel subTitle:indexPath];
     cell.priceLabel.text = [self.viewModel price:indexPath];
     [cell.thumbnailImageView setImageWithURL:[self.viewModel thumbNailURL:indexPath]];
+    
     return cell;
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    SBBookDetailViewController *detailController = [[UIStoryboard storyboardWithName:@"SBBookDetailViewController" bundle:nil] instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    
+    [detailController loadViewIfNeeded];
+    [detailController requestDetail:[self.viewModel isbn13:indexPath]];
+    detailController.title = [self.viewModel title:indexPath];
+    
+    [self.navigationController pushViewController:detailController animated:YES];
+    
+    
+//
+}
 @end
