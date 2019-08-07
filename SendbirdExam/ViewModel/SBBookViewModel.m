@@ -11,6 +11,8 @@
 #import "SBBaseBookModel.h"
 #import "SBAPIManager.h"
 #import "SBResult.h"
+#import "NSString_Utils.h"
+
 @interface SBBookViewModel ()
 @property (nonatomic, strong) SBBaseBookModel *model;
 @property (nonatomic, assign) NSInteger page;
@@ -50,7 +52,7 @@
     
     self.page++;
     
-    [[SBAPIManager shared] requestSearchQuery:query page:self.page completion:^(SBResult<SBBaseBookModel *> * _Nonnull result) {
+    [[SBAPIManager shared] requestSearchQuery:query.stringByUrlEncoding page:self.page completion:^(SBResult<SBBaseBookModel *> * _Nonnull result) {
         if (result.value != nil) {
             __weak typeof(self) weakSelf = self;
             //            dispatch_async(dispatch_get_main_queue(), ^{

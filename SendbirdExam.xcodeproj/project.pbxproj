@@ -25,6 +25,7 @@
 		D09F35A922FB1C78004BE758 /* SBSearchBookResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F35A822FB1C78004BE758 /* SBSearchBookResultViewController.m */; };
 		D0B2D5EE22F880520036DCBD /* SBBookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2D5ED22F880520036DCBD /* SBBookViewModel.m */; };
 		D0B2D5F222F886FA0036DCBD /* SBResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2D5F122F886FA0036DCBD /* SBResult.m */; };
+		D0CB066B22FB3D42004C03D6 /* NSString_Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CB066A22FB3D42004C03D6 /* NSString_Utils.m */; };
 		D0FDF71C22EDF1A5004CE813 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */; };
 		D0FDF71F22EDF1A5004CE813 /* NewBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71E22EDF1A5004CE813 /* NewBookViewController.m */; };
 		D0FDF72222EDF1A5004CE813 /* SBSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF72122EDF1A5004CE813 /* SBSearchViewController.m */; };
@@ -70,6 +71,8 @@
 		D0B2D5ED22F880520036DCBD /* SBBookViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookViewModel.m; sourceTree = "<group>"; };
 		D0B2D5F022F886FA0036DCBD /* SBResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBResult.h; sourceTree = "<group>"; };
 		D0B2D5F122F886FA0036DCBD /* SBResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBResult.m; sourceTree = "<group>"; };
+		D0CB066922FB3D42004C03D6 /* NSString_Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSString_Utils.h; sourceTree = "<group>"; };
+		D0CB066A22FB3D42004C03D6 /* NSString_Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSString_Utils.m; sourceTree = "<group>"; };
 		D0FDF71722EDF1A5004CE813 /* SendbirdExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendbirdExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FDF71A22EDF1A5004CE813 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -224,6 +227,15 @@
 			path = SearchResultViewController;
 			sourceTree = "<group>";
 		};
+		D0CB066822FB3D1F004C03D6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D0CB066922FB3D42004C03D6 /* NSString_Utils.h */,
+				D0CB066A22FB3D42004C03D6 /* NSString_Utils.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		D0FDF70E22EDF1A5004CE813 = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +257,7 @@
 		D0FDF71922EDF1A5004CE813 /* SendbirdExam */ = {
 			isa = PBXGroup;
 			children = (
+				D0CB066822FB3D1F004C03D6 /* Categories */,
 				D0226EAC22F85B8600882552 /* Views */,
 				D00D3F1722F5B71C00BDB1FD /* Network */,
 				D00D3F1422F5B70800BDB1FD /* ViewModel */,
@@ -405,6 +418,7 @@
 				D00D3F1022F5B4AD00BDB1FD /* SBBookModel.m in Sources */,
 				D0226EB022F85BAE00882552 /* SBBaseBookTableViewCell.m in Sources */,
 				D0FDF72D22EDF1A6004CE813 /* main.m in Sources */,
+				D0CB066B22FB3D42004C03D6 /* NSString_Utils.m in Sources */,
 				D00D3F1D22F5BB9A00BDB1FD /* SBRequestQuery.m in Sources */,
 				D0FDF71F22EDF1A5004CE813 /* NewBookViewController.m in Sources */,
 				D087DB3022F9A660004E3617 /* SBDetailBookCell.m in Sources */,

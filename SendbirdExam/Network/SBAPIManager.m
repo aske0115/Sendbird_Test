@@ -61,11 +61,11 @@ static NSString *urlString = @"https://api.itbook.store/1.0";
 
 - (NSString *)stringByUrlEncoding:(NSString *)url
 {
-    return (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,  (CFStringRef)url,  NULL,  (CFStringRef)@"!*'();:@&=+$,/?%#[]|",  kCFStringEncodingUTF8);
+    return [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
 }
 
 - (void)requestSearchQuery:(NSString *)query page:(NSInteger)page completion:(void(^)(SBResult<SBBaseBookModel *> *))completion {
-    NSString *searchQuery = [urlString stringByAppendingFormat:@"/search/%@/%@",[ self stringByUrlEncoding:query],@(page).stringValue];
+    NSString *searchQuery = [urlString stringByAppendingFormat:@"/search/%@/%@",query,@(page).stringValue];
     [[AFHTTPSessionManager manager] GET:searchQuery parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (responseObject != nil) {
             SBResult<SBBaseBookModel *> *model = [[SBResult alloc] init];
