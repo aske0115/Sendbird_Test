@@ -16,22 +16,21 @@
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) SBBookDetailViewModel *viewModel;
 
+
+@property (nonatomic, strong) NSArray<NSString *> *sectionTitle;
 @end
 
 @implementation SBBookDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-
     [self setUP];
     // Do any additional setup after loading the view.
 }
 
 - (void)setUP {
     self.viewModel = [[SBBookDetailViewModel alloc] init];
-    
+    self.sectionTitle = @[@"Book",@"Description",@"Information",@"Pdf"];
     CGRect frame = CGRectZero;
     frame.size.height = CGFLOAT_MIN;
     
@@ -93,9 +92,9 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if(self.viewModel.pdf != nil) {
-        return 4;
+        return self.sectionTitle.count;
     } else {
-        return 3;
+        return self.sectionTitle.count - 1;
     }
 }
 
@@ -107,25 +106,7 @@
     return CGFLOAT_MIN;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    switch (section) {
-        case 0:
-        {
-            return @"Book";
-        }
-        case 1:
-        {
-            return @"Description";
-        }
-        case 2:
-        {
-            return @"Information";
-        }
-        case 3:
-        {
-            return @"pdf";
-        }
-    }
-    return @"";
+    return self.sectionTitle[section];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.section) {
@@ -165,7 +146,7 @@
             
         }
     }
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"asdfasdf"];
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"default"];
     return cell;
 }
 
@@ -174,7 +155,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if(indexPath.section == 3) {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if([self.sectionTitle[indexPath.section] isEqualToString:@"Pdf"]) {
+        
         NSString *key = self.viewModel.pdf.allKeys[indexPath.row];
         NSString *url = self.viewModel.pdf[key];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:^(BOOL success) {

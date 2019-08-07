@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface NewBookViewController : UIViewController
+#import "SBBookListViewController.h"
+@interface NewBookViewController : SBBookListViewController
 
 @end
 

@@ -19,11 +19,15 @@
 		D087DB2D22F99B5E004E3617 /* SBDetailBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D087DB2C22F99B5E004E3617 /* SBDetailBookTableViewCell.m */; };
 		D087DB3022F9A660004E3617 /* SBDetailBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D087DB2F22F9A660004E3617 /* SBDetailBookCell.m */; };
 		D087DB3322F9A9F0004E3617 /* SBBookDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D087DB3222F9A9F0004E3617 /* SBBookDetailViewModel.m */; };
-		D0B2D5EE22F880520036DCBD /* SBNewBookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2D5ED22F880520036DCBD /* SBNewBookViewModel.m */; };
+		D09F359F22FAFC6B004BE758 /* SBBookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F359E22FAFC6B004BE758 /* SBBookListViewController.m */; };
+		D09F35A322FB02DC004BE758 /* SBSearchKeywordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F35A222FB02DC004BE758 /* SBSearchKeywordViewModel.m */; };
+		D09F35A622FB181D004BE758 /* SBSearchBookResultViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09F35A522FB181D004BE758 /* SBSearchBookResultViewController.storyboard */; };
+		D09F35A922FB1C78004BE758 /* SBSearchBookResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F35A822FB1C78004BE758 /* SBSearchBookResultViewController.m */; };
+		D0B2D5EE22F880520036DCBD /* SBBookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2D5ED22F880520036DCBD /* SBBookViewModel.m */; };
 		D0B2D5F222F886FA0036DCBD /* SBResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2D5F122F886FA0036DCBD /* SBResult.m */; };
 		D0FDF71C22EDF1A5004CE813 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */; };
 		D0FDF71F22EDF1A5004CE813 /* NewBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF71E22EDF1A5004CE813 /* NewBookViewController.m */; };
-		D0FDF72222EDF1A5004CE813 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF72122EDF1A5004CE813 /* SecondViewController.m */; };
+		D0FDF72222EDF1A5004CE813 /* SBSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF72122EDF1A5004CE813 /* SBSearchViewController.m */; };
 		D0FDF72522EDF1A5004CE813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FDF72322EDF1A5004CE813 /* Main.storyboard */; };
 		D0FDF72722EDF1A6004CE813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FDF72622EDF1A6004CE813 /* Assets.xcassets */; };
 		D0FDF72A22EDF1A6004CE813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FDF72822EDF1A6004CE813 /* LaunchScreen.storyboard */; };
@@ -55,8 +59,15 @@
 		D087DB2F22F9A660004E3617 /* SBDetailBookCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBDetailBookCell.m; sourceTree = "<group>"; };
 		D087DB3122F9A9F0004E3617 /* SBBookDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookDetailViewModel.h; sourceTree = "<group>"; };
 		D087DB3222F9A9F0004E3617 /* SBBookDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookDetailViewModel.m; sourceTree = "<group>"; };
-		D0B2D5EC22F880520036DCBD /* SBNewBookViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBNewBookViewModel.h; sourceTree = "<group>"; };
-		D0B2D5ED22F880520036DCBD /* SBNewBookViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBNewBookViewModel.m; sourceTree = "<group>"; };
+		D09F359D22FAFC6B004BE758 /* SBBookListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookListViewController.h; sourceTree = "<group>"; };
+		D09F359E22FAFC6B004BE758 /* SBBookListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookListViewController.m; sourceTree = "<group>"; };
+		D09F35A122FB02DC004BE758 /* SBSearchKeywordViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSearchKeywordViewModel.h; sourceTree = "<group>"; };
+		D09F35A222FB02DC004BE758 /* SBSearchKeywordViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSearchKeywordViewModel.m; sourceTree = "<group>"; };
+		D09F35A522FB181D004BE758 /* SBSearchBookResultViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SBSearchBookResultViewController.storyboard; sourceTree = "<group>"; };
+		D09F35A722FB1C78004BE758 /* SBSearchBookResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSearchBookResultViewController.h; sourceTree = "<group>"; };
+		D09F35A822FB1C78004BE758 /* SBSearchBookResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSearchBookResultViewController.m; sourceTree = "<group>"; };
+		D0B2D5EC22F880520036DCBD /* SBBookViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookViewModel.h; sourceTree = "<group>"; };
+		D0B2D5ED22F880520036DCBD /* SBBookViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookViewModel.m; sourceTree = "<group>"; };
 		D0B2D5F022F886FA0036DCBD /* SBResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBResult.h; sourceTree = "<group>"; };
 		D0B2D5F122F886FA0036DCBD /* SBResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBResult.m; sourceTree = "<group>"; };
 		D0FDF71722EDF1A5004CE813 /* SendbirdExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendbirdExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,8 +75,8 @@
 		D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0FDF71D22EDF1A5004CE813 /* NewBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewBookViewController.h; sourceTree = "<group>"; };
 		D0FDF71E22EDF1A5004CE813 /* NewBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewBookViewController.m; sourceTree = "<group>"; };
-		D0FDF72022EDF1A5004CE813 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		D0FDF72122EDF1A5004CE813 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		D0FDF72022EDF1A5004CE813 /* SBSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSearchViewController.h; sourceTree = "<group>"; };
+		D0FDF72122EDF1A5004CE813 /* SBSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSearchViewController.m; sourceTree = "<group>"; };
 		D0FDF72422EDF1A5004CE813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0FDF72622EDF1A6004CE813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0FDF72922EDF1A6004CE813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,10 +122,12 @@
 		D00D3F1422F5B70800BDB1FD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D0B2D5EC22F880520036DCBD /* SBNewBookViewModel.h */,
-				D0B2D5ED22F880520036DCBD /* SBNewBookViewModel.m */,
+				D0B2D5EC22F880520036DCBD /* SBBookViewModel.h */,
+				D0B2D5ED22F880520036DCBD /* SBBookViewModel.m */,
 				D087DB3122F9A9F0004E3617 /* SBBookDetailViewModel.h */,
 				D087DB3222F9A9F0004E3617 /* SBBookDetailViewModel.m */,
+				D09F35A122FB02DC004BE758 /* SBSearchKeywordViewModel.h */,
+				D09F35A222FB02DC004BE758 /* SBSearchKeywordViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -133,10 +146,11 @@
 		D0226EAC22F85B8600882552 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D087DB2A22F99B46004E3617 /* BookDetailCell */,
+				D09F35A422FB1746004BE758 /* SearchResultViewController */,
+				D09F35A022FAFFD7004BE758 /* SearchBookController */,
+				D09F359C22FAFC56004BE758 /* BookListViewController */,
 				D087DB2422F99ACE004E3617 /* BookDetailViewController */,
 				D087DB2322F99688004E3617 /* NewBookViewController */,
-				D0226EAD22F85B8C00882552 /* BaseBookCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +176,7 @@
 		D087DB2422F99ACE004E3617 /* BookDetailViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D087DB2A22F99B46004E3617 /* BookDetailCell */,
 				D087DB2522F99B01004E3617 /* SBBookDetailViewController.h */,
 				D087DB2622F99B01004E3617 /* SBBookDetailViewController.m */,
 				D087DB2822F99B11004E3617 /* SBBookDetailViewController.storyboard */,
@@ -178,6 +193,35 @@
 				D087DB2C22F99B5E004E3617 /* SBDetailBookTableViewCell.m */,
 			);
 			path = BookDetailCell;
+			sourceTree = "<group>";
+		};
+		D09F359C22FAFC56004BE758 /* BookListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0226EAD22F85B8C00882552 /* BaseBookCell */,
+				D09F359D22FAFC6B004BE758 /* SBBookListViewController.h */,
+				D09F359E22FAFC6B004BE758 /* SBBookListViewController.m */,
+			);
+			path = BookListViewController;
+			sourceTree = "<group>";
+		};
+		D09F35A022FAFFD7004BE758 /* SearchBookController */ = {
+			isa = PBXGroup;
+			children = (
+				D0FDF72022EDF1A5004CE813 /* SBSearchViewController.h */,
+				D0FDF72122EDF1A5004CE813 /* SBSearchViewController.m */,
+			);
+			path = SearchBookController;
+			sourceTree = "<group>";
+		};
+		D09F35A422FB1746004BE758 /* SearchResultViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D09F35A722FB1C78004BE758 /* SBSearchBookResultViewController.h */,
+				D09F35A822FB1C78004BE758 /* SBSearchBookResultViewController.m */,
+				D09F35A522FB181D004BE758 /* SBSearchBookResultViewController.storyboard */,
+			);
+			path = SearchResultViewController;
 			sourceTree = "<group>";
 		};
 		D0FDF70E22EDF1A5004CE813 = {
@@ -207,8 +251,6 @@
 				D00D3F0A22F5B33400BDB1FD /* Model */,
 				D0FDF71A22EDF1A5004CE813 /* AppDelegate.h */,
 				D0FDF71B22EDF1A5004CE813 /* AppDelegate.m */,
-				D0FDF72022EDF1A5004CE813 /* SecondViewController.h */,
-				D0FDF72122EDF1A5004CE813 /* SecondViewController.m */,
 				D0FDF72322EDF1A5004CE813 /* Main.storyboard */,
 				D0FDF72622EDF1A6004CE813 /* Assets.xcassets */,
 				D0FDF72822EDF1A6004CE813 /* LaunchScreen.storyboard */,
@@ -288,6 +330,7 @@
 			files = (
 				D0FDF72A22EDF1A6004CE813 /* LaunchScreen.storyboard in Resources */,
 				D0FDF72722EDF1A6004CE813 /* Assets.xcassets in Resources */,
+				D09F35A622FB181D004BE758 /* SBSearchBookResultViewController.storyboard in Resources */,
 				D087DB2922F99B11004E3617 /* SBBookDetailViewController.storyboard in Resources */,
 				D0FDF72522EDF1A5004CE813 /* Main.storyboard in Resources */,
 			);
@@ -349,11 +392,13 @@
 			files = (
 				D087DB2D22F99B5E004E3617 /* SBDetailBookTableViewCell.m in Sources */,
 				D087DB3322F9A9F0004E3617 /* SBBookDetailViewModel.m in Sources */,
-				D0FDF72222EDF1A5004CE813 /* SecondViewController.m in Sources */,
+				D0FDF72222EDF1A5004CE813 /* SBSearchViewController.m in Sources */,
 				D087DB2722F99B01004E3617 /* SBBookDetailViewController.m in Sources */,
+				D09F359F22FAFC6B004BE758 /* SBBookListViewController.m in Sources */,
 				D0FDF71C22EDF1A5004CE813 /* AppDelegate.m in Sources */,
+				D09F35A922FB1C78004BE758 /* SBSearchBookResultViewController.m in Sources */,
 				D00D3F1322F5B5BA00BDB1FD /* SBDetailBookModel.m in Sources */,
-				D0B2D5EE22F880520036DCBD /* SBNewBookViewModel.m in Sources */,
+				D0B2D5EE22F880520036DCBD /* SBBookViewModel.m in Sources */,
 				D00D3F1A22F5B72D00BDB1FD /* SBAPIManager.m in Sources */,
 				D0B2D5F222F886FA0036DCBD /* SBResult.m in Sources */,
 				D00D3F0D22F5B35600BDB1FD /* SBBaseBookModel.m in Sources */,
@@ -363,6 +408,7 @@
 				D00D3F1D22F5BB9A00BDB1FD /* SBRequestQuery.m in Sources */,
 				D0FDF71F22EDF1A5004CE813 /* NewBookViewController.m in Sources */,
 				D087DB3022F9A660004E3617 /* SBDetailBookCell.m in Sources */,
+				D09F35A322FB02DC004BE758 /* SBSearchKeywordViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

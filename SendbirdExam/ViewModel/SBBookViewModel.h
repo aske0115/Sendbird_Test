@@ -10,8 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SBNewBookViewModel : NSObject
+@interface SBBookViewModel : NSObject
 - (void)requestNewBookWithCompletion:(void(^)(void))completion;
+- (void)requestSearchBookWithQuery:(NSString *)query first:(BOOL)isFirst  completion:(void(^)(void))completion;
 
 - (NSInteger)modelCount;
 
@@ -20,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)subTitle:(NSIndexPath *)path;
 - (NSString *)price:(NSIndexPath *)path;
 - (NSURL *)thumbNailURL:(NSIndexPath *)path;
+
+- (BOOL)hasMoreList;
 @end
 
 NS_ASSUME_NONNULL_END

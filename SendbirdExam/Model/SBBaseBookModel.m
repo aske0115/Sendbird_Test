@@ -7,12 +7,21 @@
 //
 
 #import "SBBaseBookModel.h"
+@interface SBBaseBookModel()
+
+@property (nonatomic, assign, readwrite) NSInteger totalCount;
+@property (nonatomic, assign, readwrite) NSInteger errorCode;
+@end
+
 
 @implementation SBBaseBookModel
 
 - (id)initWithJSON:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
+        _totalCount = [(NSString *)dictionary[@"total"] integerValue];
+        _errorCode = [(NSString *)dictionary[@"error"] integerValue];
+        
         NSArray *book = dictionary[@"books"];
         NSMutableArray *booksArray = [[NSMutableArray alloc] init];
        
