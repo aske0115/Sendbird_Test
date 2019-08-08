@@ -13,6 +13,7 @@
 #import "SBResult.h"
 #import "NSString_Utils.h"
 
+
 @interface SBBookViewModel ()
 @property (nonatomic, strong) SBBaseBookModel *model;
 @property (nonatomic, assign) NSInteger page;
@@ -29,22 +30,24 @@
     return self;
 }
 
-- (void)requestNewBookWithCompletion:(void (^)(void))completion {
+- (void)requestNewBookWithCompletion:(void(^)(BOOL success, NSError *error))completion {
     [[SBAPIManager shared] requestNewBooks:^(SBResult<SBBaseBookModel *> * _Nonnull result) {
-        if (result.value != nil) {
+        if (result.value != nil && result.value.totalCount > 0) {
             __weak typeof(self) weakSelf = self;
-//            dispatch_async(dispatch_get_main_queue(), ^{
-            weakSelf.model = result.value;
-            completion();
-//            });
+
+                weakSelf.model = result.value;
+                completion(true,nil);
         } else {
-            NSLog(@"Erorr == %@",result.error.description);
-            completion();
+            if(result.error == nil) {
+                completion(false,[NSError errorWithDomain:@"response EmptyData" code:-1001 userInfo:nil]);
+            } else {
+                completion(false,result.error);
+            }
         }
     }];
 }
 
-- (void)requestSearchBookWithQuery:(NSString *)query first:(BOOL)isFirst  completion:(void(^)(void))completion {
+- (void)requestSearchBookWithQuery:(NSString *)query first:(BOOL)isFirst  completion:(void(^)(BOOL success, NSError *error))completion {
     
     if(isFirst) {
         self.page = 0;
@@ -53,7 +56,7 @@
     self.page++;
     
     [[SBAPIManager shared] requestSearchQuery:query.stringByUrlEncoding page:self.page completion:^(SBResult<SBBaseBookModel *> * _Nonnull result) {
-        if (result.value != nil) {
+        if (result.value != nil && result.value.totalCount > 0) {
             __weak typeof(self) weakSelf = self;
             //            dispatch_async(dispatch_get_main_queue(), ^{
             if(weakSelf.page == 1) {
@@ -63,11 +66,14 @@
 //                [weakSelf.model.books arrayByAddingObjectsFromArray:result.value.books];
             }
             
-            completion();
+            completion(true,nil);
             //            });
         } else {
-            NSLog(@"Erorr == %@",result.error.description);
-            completion();
+            if(result.error == nil) {
+                completion(false,[NSError errorWithDomain:@"No SearchResult" code:-99 userInfo:nil]);
+            } else {
+                completion(false,result.error);
+            }
         }
     }];
 }

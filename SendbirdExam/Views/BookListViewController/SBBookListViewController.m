@@ -12,12 +12,14 @@
 #import "SBBookDetailViewController.h"
 
 @interface SBBookListViewController () <UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 @end
 
 @implementation SBBookListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     [self setUP];
     // Do any additional setup after loading the view.
 }
@@ -25,7 +27,17 @@
 - (void)setUP {
     
     self.viewModel = [[SBBookViewModel alloc] init];
-
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl layoutIfNeeded];
+    
+//    if (@available(iOS 10, *)) {
+        [self.tableView setRefreshControl:self.refreshControl];
+//    } else {
+//        [self.tableView addSubview:self.refresh];
+//    }
+    
+     [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     
     self.tableView.delegate = self;
@@ -72,4 +84,8 @@
     
     [self.navigationController pushViewController:detailController animated:YES];
 }
+- (void)refresh {
+    
+}
+
 @end

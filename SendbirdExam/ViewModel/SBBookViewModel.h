@@ -11,8 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SBBookViewModel : NSObject
-- (void)requestNewBookWithCompletion:(void(^)(void))completion;
-- (void)requestSearchBookWithQuery:(NSString *)query first:(BOOL)isFirst  completion:(void(^)(void))completion;
+- (void)requestNewBookWithCompletion:(void(^)(BOOL success, NSError *error))completion;
+- (void)requestSearchBookWithQuery:(NSString *)query first:(BOOL)isFirst  completion:(void(^)(BOOL success, NSError *error))completion;
 
 - (NSInteger)modelCount;
 

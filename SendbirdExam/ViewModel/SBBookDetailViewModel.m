@@ -10,6 +10,7 @@
 #import "SBDetailBookModel.h"
 #import "SBAPIManager.h"
 #import "SBResult.h"
+
 @interface SBBookDetailViewModel ()
 @property (nonatomic, strong) SBDetailBookModel *model;
 @property (nonatomic, readwrite) NSString *title;

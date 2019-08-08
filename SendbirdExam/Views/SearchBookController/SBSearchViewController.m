@@ -78,13 +78,12 @@
     return cell;
 }
 
-
 - (void)showResultViewController:(NSString *)keyword {
     SBSearchBookResultViewController *result = (SBSearchBookResultViewController *)[[UIStoryboard storyboardWithName:@"SBSearchBookResultViewController" bundle:nil] instantiateViewControllerWithIdentifier:@"BookListViewController"];
     [result loadViewIfNeeded];
     result.title = keyword;
     [self.navigationController pushViewController:result animated:YES];
-    [result requestSearch:keyword];
+    [result requestSearch:keyword initialRequest:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

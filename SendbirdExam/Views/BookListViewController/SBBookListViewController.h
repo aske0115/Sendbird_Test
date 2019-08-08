@@ -10,9 +10,12 @@
 #import "SBBookViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
+@protocol SBBookListViewControllerDelegate
+@required
+- (void)refresh;
+@end
 
-
-@interface SBBookListViewController : UIViewController 
+@interface SBBookListViewController : UIViewController <SBBookListViewControllerDelegate>
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) SBBookViewModel *viewModel;
 @end

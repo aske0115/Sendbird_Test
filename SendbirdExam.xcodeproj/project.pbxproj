@@ -13,6 +13,7 @@
 		D00D3F1322F5B5BA00BDB1FD /* SBDetailBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1222F5B5BA00BDB1FD /* SBDetailBookModel.m */; };
 		D00D3F1A22F5B72D00BDB1FD /* SBAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1922F5B72D00BDB1FD /* SBAPIManager.m */; };
 		D00D3F1D22F5BB9A00BDB1FD /* SBRequestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D3F1C22F5BB9A00BDB1FD /* SBRequestQuery.m */; };
+		D01C439122FC4E11000CB1DF /* UIAlertController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D01C439022FC4E11000CB1DF /* UIAlertController+Utils.m */; };
 		D0226EB022F85BAE00882552 /* SBBaseBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0226EAF22F85BAE00882552 /* SBBaseBookTableViewCell.m */; };
 		D087DB2722F99B01004E3617 /* SBBookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D087DB2622F99B01004E3617 /* SBBookDetailViewController.m */; };
 		D087DB2922F99B11004E3617 /* SBBookDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D087DB2822F99B11004E3617 /* SBBookDetailViewController.storyboard */; };
@@ -49,6 +50,8 @@
 		D00D3F1922F5B72D00BDB1FD /* SBAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAPIManager.m; sourceTree = "<group>"; };
 		D00D3F1B22F5BB9A00BDB1FD /* SBRequestQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBRequestQuery.h; sourceTree = "<group>"; };
 		D00D3F1C22F5BB9A00BDB1FD /* SBRequestQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBRequestQuery.m; sourceTree = "<group>"; };
+		D01C438C22FC4C4B000CB1DF /* UIAlertController+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Utils.h"; sourceTree = "<group>"; };
+		D01C439022FC4E11000CB1DF /* UIAlertController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Utils.m"; sourceTree = "<group>"; };
 		D0226EAE22F85BAE00882552 /* SBBaseBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBaseBookTableViewCell.h; sourceTree = "<group>"; };
 		D0226EAF22F85BAE00882552 /* SBBaseBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBaseBookTableViewCell.m; sourceTree = "<group>"; };
 		D087DB2522F99B01004E3617 /* SBBookDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookDetailViewController.h; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 			children = (
 				D0CB066922FB3D42004C03D6 /* NSString_Utils.h */,
 				D0CB066A22FB3D42004C03D6 /* NSString_Utils.m */,
+				D01C438C22FC4C4B000CB1DF /* UIAlertController+Utils.h */,
+				D01C439022FC4E11000CB1DF /* UIAlertController+Utils.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				D087DB2D22F99B5E004E3617 /* SBDetailBookTableViewCell.m in Sources */,
 				D087DB3322F9A9F0004E3617 /* SBBookDetailViewModel.m in Sources */,
 				D0FDF72222EDF1A5004CE813 /* SBSearchViewController.m in Sources */,
+				D01C439122FC4E11000CB1DF /* UIAlertController+Utils.m in Sources */,
 				D087DB2722F99B01004E3617 /* SBBookDetailViewController.m in Sources */,
 				D09F359F22FAFC6B004BE758 /* SBBookListViewController.m in Sources */,
 				D0FDF71C22EDF1A5004CE813 /* AppDelegate.m in Sources */,

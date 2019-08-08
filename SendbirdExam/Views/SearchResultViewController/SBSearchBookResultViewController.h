@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SBSearchBookResultViewController : SBBookListViewController
-- (void)requestSearch:(NSString *)query;
+- (void)requestSearch:(NSString *)query initialRequest:(BOOL)isFirst;
 @end
 
 NS_ASSUME_NONNULL_END
